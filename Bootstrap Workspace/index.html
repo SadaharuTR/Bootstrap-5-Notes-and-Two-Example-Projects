@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        .w{
+            width: 400px;
+        }
+    </style>
+
+</head>
+
+<body class="p-5">
+    
+    <form>
+        <div class="form-group">
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" class="form-control" placeholder="Adınızı Giriniz...">
+        </div>
+        <div class="form-group mt-3">
+            <label for="surname">Soyadınız:</label>
+            <input type="text" id="surname" class="form-control" placeholder="Soyadınızı Giriniz...">
+        </div>
+        <div class="form-group mt-3">
+            <label for="email">E-Mail Adresiniz:</label>
+            <input type="email" id="mail" class="form-control" placeholder="Mail Adresini Giriniz...">
+            <small class="form-text text-muted">E-mail adresi girmek zorunludur.</small>
+        </div>
+        <div class="form-group mt-3">
+            <label for="password">Parolanız:</label>
+            <input type="password" id="password" class="form-control" placeholder="Parolanızı Giriniz...">
+            <small class="form-text text-muted">Parola girmek zorunludur.</small>
+        </div>
+
+        <!-- listBox kısmı -->
+        <div class="form-group mt-4">
+
+            <label for="city">Doğum Yeriniz:</label>
+            <select name="city" id="city">
+                <option value="34">İstanbul</option>
+                <option value="06">Ankara</option>
+                <option value="33">Mersin</option>
+                <option value="01">Adana</option>
+                <option value="31">Hatay</option>
+            </select>
+        </div>
+
+        <!-- mesaj kısmı -->
+        <div class="form-group mt-3">
+            <label for="message">Mesajınız:</label>
+            <textarea name="message" id="message" cols="30" rows="5" class="form-control"></textarea>
+        </div>
+
+        <!-- checkbox listesi -->
+        <div class="form-group mt-3">
+            <legend>Hobileriniz:</legend>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Futbol
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Basketbol
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Voleybol
+                </label>
+            </div>
+        </div>
+
+        <!-- tekli checkbox -->
+        <div class="custom-control custom-checkbox mt-4">
+            <input type="checkbox" id="cb" class="custom-control-input">
+            <label class="custom-control-label" for="cb">Sayfayı okudum.</label>
+        </div>
+
+        <!-- radiobutton -->
+        <div class="custom-control custom-radio mt-4">
+            <input type="radio" id="rb" class="custom-control-input">
+            <label class="custom-control-label" for="rb">Radyo Cevdet.</label>
+        </div>
+
+        <!-- input grupları -->
+        <div class="input-group mt-3">
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text" id="ig">@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="input-group mt-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="ig">http://twitter.com/</span>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+<!-- Dipnot: id kendi yazılımımız içerisinde, name ise server'da kullanılır. -->
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
